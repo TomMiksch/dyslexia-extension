@@ -1,0 +1,16 @@
+{
+    "name": "Dyslexia Helper",
+    "description": "The goal is to help with dyslexia. We'll see.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage", "activeTab", "scripting", "tabs"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://*/*",
+                      "http://*/*"],
+          "js": ["popup.js"]
+        }
+      ]
+}
